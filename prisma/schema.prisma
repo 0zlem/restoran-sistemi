@@ -1,0 +1,44 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model MenuKategori {
+  id    Int    @id @default(autoincrement())
+  ad    String @unique
+  menus Menu[]
+}
+
+model Menu {
+  id         Int          @id @default(autoincrement())
+  yemekAdi   String
+  kategoriId Int
+  kategori   MenuKategori @relation(fields: [kategoriId], references: [id])
+}
+
+model Rezervasyon {
+  id         Int      @id @default(autoincrement())
+  adSoyad    String
+  email      String?
+  telefon    String
+  tarih      DateTime @db.Date
+  saat       String
+  kisiSayisi Int
+}
+
+model Kullanici {
+  id       Int     @id(map: "kullanici_pkey") @default(autoincrement())
+  email    String  @unique(map: "kullanici_email_key")
+  password String  @unique(map: "kullanici_password_key")
+  fullname String?
+}
+
+model resimler {
+  id       String @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  kategori String
+  resimurl String
+}
