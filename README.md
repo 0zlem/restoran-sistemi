@@ -1,36 +1,34 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Restoran Sistemi
 
-## Getting Started
+Bu proje, restoran yönetimi ve rezervasyon işlemlerini kolaylaştırmak için geliştirilmiş bir web uygulamasıdır. Admin paneli üzerinden menü ve kategori ekleyebilir, kullanıcılar ise rezervasyon yapabilir ve restoran menüsünü görüntüleyebilir.
 
-First, run the development server:
+## Özellikler
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Kategori Yönetimi**: Restoran menüsünü kategorilere ayırarak düzenleme.
+- **Menu Yönetimi**: Admin tarafından yeni yemekler eklenebilir, düzenlenebilir ve silinebilir.
+- **Resim Yükleme**: Menü öğelerine resim ekleyebilme.
+- **Rezervasyon Sistemi**: Kullanıcılar restoran için online rezervasyon oluşturabilir.
+- **Admin Girişi**: Yönetici paneli ile menü, kategori ve rezervasyonları yönetme.
+- **Tema Desteği**: Koyu ve açık tema desteği (Next Themes ile).
+- **Bildirimler**: İşlem bildirimleri ve uyarılar (Sonner ile).
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Kullanılan Teknolojiler
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Next.js** – React tabanlı sunucu tarafı render ve frontend.
+- **React** – Kullanıcı arayüzü.
+- **TailwindCSS** – Stil ve layout yönetimi.
+- **Prisma** – Veritabanı ORM.
+- **Supabase** – Gerçek zamanlı veri ve depolama.
+- **Radix UI** – UI bileşenleri (Dialog, Select, Tooltip, vs.).
+- **React Hook Form & Zod** – Form yönetimi ve doğrulama.
+- **JWT & Bcrypt** – Kullanıcı kimlik doğrulama ve güvenlik.
+- **Nodemailer** – E-posta gönderimi.
+- **Lucide React & React Icons** – Icon yönetimi.
+- **Embla Carousel** – Slider ve carousel gösterimleri.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Kurulum
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Depoyu klonlayın:
+   ```bash
+   git clone https://github.com/kullaniciadi/restoran-sistemi.git
+   cd restoran-sistemi
