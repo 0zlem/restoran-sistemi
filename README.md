@@ -24,7 +24,6 @@ Bu proje, restoran yönetimi ve rezervasyon işlemlerini kolaylaştırmak için 
 - **JWT & Bcrypt** – Kullanıcı kimlik doğrulama ve güvenlik.
 - **Nodemailer** – E-posta gönderimi.
 - **Lucide React & React Icons** – Icon yönetimi.
-- **Embla Carousel** – Slider ve carousel gösterimleri.
 
 ## Kurulum
 
